@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 500" width="100%" height="100%" style="background:#f3f4f6; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  
+  <g transform="translate(24, 20)">
+    <!-- LEFT CARD: Earnings Overview -->
+    <g transform="translate(0, 0)">
+      <!-- Card background -->
+      <rect x="0" y="0" width="410" height="460" rx="12" fill="#ffffff" filter="drop-shadow(0 2px 8px rgba(0,0,0,0.06))" />
+      
+      <!-- Gradient Top Header Banner -->
+      <defs>
+        <linearGradient id="earnings-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#FF3366" />
+          <stop offset="100%" stop-color="#FF9933" />
+        </linearGradient>
+      </defs>
+      <rect x="0" y="0" width="410" height="48" rx="12 12 0 0" fill="url(#earnings-grad)" />
+      <text x="20" y="30" font-size="16" font-weight="700" fill="#ffffff">Earnings Overview</text>
+
+      <!-- Row 1: Pending -->
+      <g transform="translate(20, 68)">
+        <text x="0" y="24" font-size="20" font-weight="700" fill="#111827">Pending</text>
+        <text x="370" y="24" font-size="20" font-weight="700" fill="#4338CA" text-anchor="end">USD 4,182.47</text>
+        <text x="0" y="44" font-size="12" fill="#6B7280">Commissions Waiting for Approval</text>
+        <text x="0" y="70" font-size="11" font-weight="600" fill="#EF4444">↓ -91.62%  <tspan font-weight="400" fill="#9CA3AF">From Previous Period</tspan></text>
+        <line x1="0" y1="88" x2="370" y2="88" stroke="#F3F4F6" stroke-width="1" />
+      </g>
+
+      <!-- Row 2: Approved -->
+      <g transform="translate(20, 176)">
+        <text x="0" y="24" font-size="20" font-weight="700" fill="#111827">Approved</text>
+        <text x="370" y="24" font-size="20" font-weight="700" fill="#10B981" text-anchor="end">USD 6,009.77</text>
+        <text x="0" y="44" font-size="12" fill="#6B7280">Waiting for Advertiser to Pay</text>
+        
+        <!-- Blue Progress Bar -->
+        <rect x="0" y="56" width="370" height="5" rx="2.5" fill="#E5E7EB" />
+        <rect x="0" y="56" width="220" height="5" rx="2.5" fill="#3B82F6" />
+        
+        <text x="0" y="80" font-size="11" font-weight="600" fill="#EF4444">↓ -98.58%  <tspan font-weight="400" fill="#9CA3AF">From Previous Period</tspan></text>
+        <line x1="0" y1="98" x2="370" y2="98" stroke="#F3F4F6" stroke-width="1" />
+      </g>
+
+      <!-- Row 3: Declined -->
+      <g transform="translate(20, 292)">
+        <text x="0" y="24" font-size="20" font-weight="700" fill="#111827">Declined</text>
+        <text x="370" y="24" font-size="20" font-weight="700" fill="#EF4444" text-anchor="end">USD 1,953.34</text>
+        <line x1="0" y1="48" x2="370" y2="48" stroke="#F3F4F6" stroke-width="1" />
+      </g>
+
+      <!-- Row 4: Paid -->
+      <g transform="translate(20, 360)">
+        <text x="0" y="24" font-size="20" font-weight="700" fill="#111827">Paid</text>
+        <text x="370" y="24" font-size="20" font-weight="700" fill="#111827" text-anchor="end">USD 5,480.41</text>
+      </g>
+    </g>
+
+    <!-- RIGHT CARD: Performance Overview -->
+    <g transform="translate(434, 0)">
+      <!-- Card background -->
+      <rect x="0" y="0" width="590" height="460" rx="12" fill="#ffffff" filter="drop-shadow(0 2px 8px rgba(0,0,0,0.06))" />
+
+      <!-- Top Title & Monthly Tab -->
+      <text x="24" y="34" font-size="16" font-weight="700" fill="#111827">Performance Overview</text>
+      <text x="560" y="34" font-size="13" font-weight="600" fill="#4F46E5" text-anchor="end">Monthly</text>
+      <line x1="515" y1="42" x2="560" y2="42" stroke="#4F46E5" stroke-width="2" />
+      <line x1="24" y1="48" x2="560" y2="48" stroke="#F3F4F6" stroke-width="1" />
+
+      <!-- 3 Metrics Columns -->
+      <g transform="translate(24, 65)">
+        <!-- Column 1: Total Commissions -->
+        <text x="0" y="16" font-size="12" fill="#6B7280">Total Commissions</text>
+        <text x="0" y="44" font-size="26" font-weight="700" fill="#111827">17.6K</text>
+        <text x="80" y="44" font-size="12" font-weight="600" fill="#EF4444">↓ -92.50%</text>
+
+        <!-- Column 2: Total Transactions -->
+        <text x="180" y="16" font-size="12" fill="#6B7280">Total Transactions</text>
+        <text x="180" y="44" font-size="26" font-weight="700" fill="#111827">1.1K</text>
+        <text x="245" y="44" font-size="12" font-weight="600" fill="#EF4444">↓ -85.32%</text>
+
+        <!-- Column 3: Total Sales -->
+        <text x="350" y="16" font-size="12" fill="#6B7280">Total Sales</text>
+        <text x="350" y="44" font-size="26" font-weight="700" fill="#111827">304.6K</text>
+        <text x="445" y="44" font-size="12" font-weight="600" fill="#EF4444">↓ -85.32%</text>
+      </g>
+
+      <!-- Graph Area (Days 1 to 31) -->
+      <g transform="translate(24, 150)">
+        <!-- Y Axis Scale -->
+        <text x="0" y="15" font-size="10" fill="#9CA3AF">620</text>
+        <text x="0" y="40" font-size="10" fill="#9CA3AF">500</text>
+        <text x="0" y="65" font-size="10" fill="#9CA3AF">380</text>
+        <text x="0" y="90" font-size="10" fill="#9CA3AF">260</text>
+        <text x="0" y="115" font-size="10" fill="#9CA3AF">140</text>
+        <text x="0" y="140" font-size="10" fill="#9CA3AF">80</text>
+        <text x="0" y="165" font-size="10" fill="#9CA3AF">20</text>
+
+        <!-- Gridlines -->
+        <line x1="28" y1="12" x2="540" y2="12" stroke="#F3F4F6" stroke-width="1" />
+        <line x1="28" y1="37" x2="540" y2="37" stroke="#F3F4F6" stroke-width="1" />
+        <line x1="28" y1="62" x2="540" y2="62" stroke="#F3F4F6" stroke-width="1" />
+        <line x1="28" y1="87" x2="540" y2="87" stroke="#F3F4F6" stroke-width="1" />
+        <line x1="28" y1="112" x2="540" y2="112" stroke="#F3F4F6" stroke-width="1" />
+        <line x1="28" y1="137" x2="540" y2="137" stroke="#F3F4F6" stroke-width="1" />
+        <line x1="28" y1="162" x2="540" y2="162" stroke="#E5E7EB" stroke-width="1" />
+
+        <!-- Dotted Grey Line (Previous Period) -->
+        <path d="M 28 162 L 60 162 Q 80 162 100 155 T 130 160 T 160 115 T 190 145 T 220 155 T 250 80 T 280 155 T 310 90 T 340 140 T 370 125 T 400 150 T 430 20 T 460 140 T 490 150 L 530 120" fill="none" stroke="#9CA3AF" stroke-width="1.8" stroke-dasharray="3 3" />
+
+        <!-- Solid Blue Line (Current Period) -->
+        <path d="M 28 162 L 50 162 Q 65 145 75 140 T 95 152 T 115 146 T 135 150 T 155 158 T 195 160 T 250 162 T 320 162 T 400 162 L 530 162" fill="none" stroke="#4F46E5" stroke-width="2.5" />
+
+        <!-- X Axis Days Labels -->
+        <g transform="translate(28, 180)" font-size="8.5" fill="#6B7280">
+          <text x="0" y="0">1</text>
+          <text x="16" y="0">2</text>
+          <text x="32" y="0">3</text>
+          <text x="48" y="0">4</text>
+          <text x="64" y="0">5</text>
+          <text x="80" y="0">6</text>
+          <text x="96" y="0">7</text>
+          <text x="112" y="0">8</text>
+          <text x="128" y="0">9</text>
+          <text x="144" y="0">10</text>
+          <text x="160" y="0">11</text>
+          <text x="176" y="0">12</text>
+          <text x="192" y="0">13</text>
+          <text x="208" y="0">14</text>
+          <text x="224" y="0">15</text>
+          <text x="240" y="0">16</text>
+          <text x="256" y="0">17</text>
+          <text x="272" y="0">18</text>
+          <text x="288" y="0">19</text>
+          <text x="304" y="0">20</text>
+          <text x="320" y="0">21</text>
+          <text x="336" y="0">22</text>
+          <text x="352" y="0">23</text>
+          <text x="368" y="0">24</text>
+          <text x="384" y="0">25</text>
+          <text x="400" y="0">26</text>
+          <text x="416" y="0">27</text>
+          <text x="432" y="0">28</text>
+          <text x="448" y="0">29</text>
+          <text x="464" y="0">30</text>
+          <text x="480" y="0">31</text>
+        </g>
+
+        <!-- Legend -->
+        <g transform="translate(28, 206)" font-size="11">
+          <circle cx="5" cy="0" r="4" fill="#4F46E5" />
+          <text x="15" y="4" fill="#4B5563">Current Period</text>
+          <circle cx="120" cy="0" r="4" fill="#9CA3AF" />
+          <text x="130" y="4" fill="#4B5563">Previous Period</text>
+        </g>
+      </g>
+
+      <!-- Bottom Note -->
+      <text x="24" y="395" font-size="10.5" fill="#6B7280">Note: <tspan fill="#9CA3AF">This chart is based on your overall activity. To check in detail, please go to </tspan><tspan fill="#4F46E5">performance</tspan><tspan fill="#9CA3AF"> section.</tspan></text>
+
+      <!-- Activate Windows Watermark from user's real screenshot -->
+      <g transform="translate(420, 420)">
+        <text x="0" y="14" font-size="13" fill="#9CA3AF" opacity="0.65">Activate Windows</text>
+        <text x="0" y="28" font-size="10" fill="#9CA3AF" opacity="0.55">Go to Settings to activate Windows.</text>
+      </g>
+    </g>
+
+    <!-- Feedback Tab on right edge matching screenshot -->
+    <g transform="translate(1024, 150)">
+      <rect x="0" y="0" width="22" height="70" rx="3 0 0 3" fill="#D9460F" />
+      <text x="-35" y="15" font-size="11" font-weight="600" fill="#ffffff" transform="rotate(-90)" letter-spacing="1">Feedback</text>
+    </g>
+  </g>
+</svg>

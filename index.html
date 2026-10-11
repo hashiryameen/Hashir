@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hashir Yameen - PPC Specialist & Affiliate Marketing Portfolio</title>
+    <meta name="description" content="Professional portfolio of Hashir Yameen, PPC Specialist, Google Ads Expert, and Affiliate Marketing professional based in Karachi, Pakistan." />
+    <meta property="og:title" content="Hashir Yameen - PPC Specialist & Affiliate Marketing Portfolio" />
+    <meta property="og:description" content="Professional portfolio of Hashir Yameen, PPC Specialist, Google Ads Expert, and Affiliate Marketing professional based in Karachi, Pakistan." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      (function() {
+        try {
+          var _origFetch = window.fetch;
+          var _currentFetch = typeof _origFetch === 'function' ? _origFetch.bind(window) : _origFetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return _currentFetch;
+            },
+            set: function(fn) {
+              _currentFetch = fn;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (_) {}
+
+        window.addEventListener('error', function(event) {
+          if (event.filename && event.filename.indexOf('chrome-extension://') !== -1) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            return false;
+          }
+        }, true);
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-600 selection:text-white dark:bg-slate-950 dark:text-slate-100">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
