@@ -1,82 +1,68 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="100%" height="100%" style="background:#823319; font-family: -apple-system, BlinkMacSystemFont, sans-serif;">
-  <!-- Brick Pattern Definition -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="100%" height="100%">
   <defs>
-    <pattern id="real-brick-wall" width="60" height="26" patternUnits="userSpaceOnUse">
-      <rect width="60" height="26" fill="#88361b" />
-      <rect x="1" y="1" width="58" height="11" fill="#a84928" rx="1" />
-      <rect x="31" y="14" width="58" height="11" fill="#752a13" rx="1" />
-      <line x1="0" y1="13" x2="60" y2="13" stroke="#4a1a0c" stroke-width="2" />
-      <line x1="0" y1="26" x2="60" y2="26" stroke="#4a1a0c" stroke-width="2" />
-      <line x1="30" y1="1" x2="30" y2="13" stroke="#4a1a0c" stroke-width="2" />
-      <line x1="0" y1="14" x2="0" y2="26" stroke="#4a1a0c" stroke-width="2" />
-    </pattern>
-    <radialGradient id="lamp-glow" cx="20%" cy="25%" r="45%">
-      <stop offset="0%" stop-color="#fffbeb" stop-opacity="0.4" />
-      <stop offset="50%" stop-color="#fef08a" stop-opacity="0.15" />
-      <stop offset="100%" stop-color="#fef08a" stop-opacity="0" />
-    </radialGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#161B22"/>
+      <stop offset="50%" stop-color="#0E1217"/>
+      <stop offset="100%" stop-color="#080B0E"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B8F228"/>
+      <stop offset="100%" stop-color="#65A30D"/>
+    </linearGradient>
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E2A77A"/>
+      <stop offset="100%" stop-color="#C58557"/>
+    </linearGradient>
   </defs>
 
-  <!-- Brick Wall -->
-  <rect width="400" height="500" fill="url(#real-brick-wall)" />
-
-  <!-- Lamp Ambient Glow on Brick -->
-  <circle cx="80" cy="150" r="160" fill="url(#lamp-glow)" />
-
-  <!-- Black Metal Wall Sconce Lamp on Left -->
-  <path d="M 45 130 Q 75 95 85 115 L 105 145 L 60 145 Z" fill="#0f172a" />
-  <path d="M 20 120 L 45 125" stroke="#0f172a" stroke-width="8" stroke-linecap="round" />
-  <circle cx="82" cy="150" r="8" fill="#fef08a" />
-  <circle cx="82" cy="150" r="14" fill="#fde047" opacity="0.3" />
-
-  <!-- Hashir Yameen Standing -->
-  <!-- White Pants / Trousers -->
-  <path d="M 155 365 L 165 500 L 195 500 L 190 365 Z" fill="#f8fafc" />
-  <path d="M 205 365 L 205 500 L 235 500 L 245 365 Z" fill="#f8fafc" />
-  <line x1="200" y1="365" x2="200" y2="440" stroke="#cbd5e1" stroke-width="2" />
-
-  <!-- Short-Sleeved Plaid Collared Shirt (Blue & White Check pattern) -->
-  <path d="M 130 400 L 150 230 Q 200 220 250 230 L 270 400 Z" fill="#2563eb" />
+  <!-- Background Card -->
+  <rect width="400" height="500" fill="url(#bgGrad)"/>
   
-  <!-- Left Sleeve & Arm -->
-  <path d="M 150 230 L 115 305 L 145 315 L 160 250 Z" fill="#2563eb" />
-  <path d="M 125 310 L 138 370" stroke="#c68652" stroke-width="16" stroke-linecap="round" />
-
-  <!-- Right Sleeve & Arm -->
-  <path d="M 250 230 L 285 305 L 255 315 L 240 250 Z" fill="#2563eb" />
-  <path d="M 275 310 L 260 370" stroke="#c68652" stroke-width="16" stroke-linecap="round" />
-  <!-- Wristwatch on left wrist -->
-  <rect x="252" y="340" width="16" height="7" rx="2" fill="#0f172a" />
-
-  <!-- Tartan Plaid Lines (White and Light Blue) -->
-  <line x1="168" y1="230" x2="168" y2="400" stroke="#ffffff" stroke-width="5" opacity="0.8" />
-  <line x1="200" y1="225" x2="200" y2="400" stroke="#ffffff" stroke-width="6" opacity="0.9" />
-  <line x1="232" y1="230" x2="232" y2="400" stroke="#ffffff" stroke-width="5" opacity="0.8" />
-  <line x1="140" y1="270" x2="260" y2="270" stroke="#ffffff" stroke-width="5" opacity="0.8" />
-  <line x1="135" y1="315" x2="265" y2="315" stroke="#ffffff" stroke-width="5" opacity="0.8" />
-  <line x1="132" y1="360" x2="268" y2="360" stroke="#ffffff" stroke-width="5" opacity="0.8" />
-  <line x1="184" y1="228" x2="184" y2="400" stroke="#93c5fd" stroke-width="3" opacity="0.7" />
-  <line x1="216" y1="228" x2="216" y2="400" stroke="#93c5fd" stroke-width="3" opacity="0.7" />
-
-  <!-- Open Polo Collar -->
-  <polygon points="180,230 200,265 220,230 200,225" fill="#f8fafc" />
-
+  <!-- Subtle Grid/Aura -->
+  <circle cx="200" cy="210" r="150" fill="#B8F228" opacity="0.08" filter="blur(20px)"/>
+  
+  <!-- Shoulders & Suit -->
+  <path d="M 60 500 C 70 380, 120 330, 200 330 C 280 330, 330 380, 340 500 Z" fill="url(#suitGrad)"/>
+  
+  <!-- Inner Shirt & Collar -->
+  <polygon points="175,330 225,330 208,410 192,410" fill="#FFFFFF"/>
+  <polygon points="170,330 192,410 155,345" fill="#CBD5E1"/>
+  <polygon points="230,330 208,410 245,345" fill="#E2E8F0"/>
+  
+  <!-- Lime Accent Tie/Detail -->
+  <polygon points="196,380 204,380 206,470 194,470" fill="url(#accentGrad)"/>
+  
   <!-- Neck -->
-  <rect x="190" y="200" width="20" height="30" fill="#c68652" />
-
-  <!-- Head -->
-  <ellipse cx="200" cy="165" rx="36" ry="42" fill="#c68652" />
-
+  <rect x="178" y="260" width="44" height="80" rx="10" fill="url(#skinGrad)"/>
+  
+  <!-- Head & Face -->
+  <ellipse cx="200" cy="205" rx="65" ry="80" fill="url(#skinGrad)"/>
+  
   <!-- Hair -->
-  <path d="M 164 160 Q 164 120 200 120 Q 236 120 236 160 Q 220 140 200 140 Q 180 140 164 160 Z" fill="#0f172a" />
-
-  <!-- Facial Hair (Beard & Mustache) -->
-  <path d="M 176 185 Q 200 210 224 185 Q 224 202 200 210 Q 176 202 176 185 Z" fill="#0f172a" opacity="0.9" />
-  <ellipse cx="200" cy="182" rx="12" ry="3.5" fill="#0f172a" />
-
+  <path d="M 130 195 C 130 120, 160 110, 200 110 C 240 110, 270 120, 270 195 C 265 170, 245 135, 200 135 C 155 135, 135 170, 130 195 Z" fill="#1C1917"/>
+  
+  <!-- Well-groomed light beard & jawline -->
+  <path d="M 148 215 C 150 270, 180 285, 200 285 C 220 285, 250 270, 252 215 C 240 255, 215 272, 200 272 C 185 272, 160 255, 148 215 Z" fill="#292524" opacity="0.75"/>
+  
   <!-- Eyes & Eyebrows -->
-  <ellipse cx="186" cy="162" rx="4" ry="3" fill="#0f172a" />
-  <ellipse cx="214" cy="162" rx="4" ry="3" fill="#0f172a" />
-  <line x1="180" y1="156" x2="192" y2="156" stroke="#0f172a" stroke-width="2.5" />
-  <line x1="208" y1="156" x2="220" y2="156" stroke="#0f172a" stroke-width="2.5" />
+  <path d="M 165 175 Q 178 172 188 175" stroke="#1C1917" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M 212 175 Q 222 172 235 175" stroke="#1C1917" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <circle cx="177" cy="190" r="4.5" fill="#1C1917"/>
+  <circle cx="223" cy="190" r="4.5" fill="#1C1917"/>
+  
+  <!-- Nose -->
+  <path d="M 200 185 L 196 215 L 204 215" stroke="#9A6138" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Confident Smile -->
+  <path d="M 185 235 Q 200 245 215 235" stroke="#78350F" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Professional Badge -->
+  <g transform="translate(140, 440)">
+    <rect width="120" height="28" rx="14" fill="#0A0E13" stroke="#B8F228" stroke-width="1.5"/>
+    <text x="60" y="18" fill="#B8F228" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle" letter-spacing="1">HASHIR YAMEEN</text>
+  </g>
 </svg>
